@@ -1,0 +1,32 @@
+.hero-container {
+    background-color: grey;
+}
+
+.intro {
+    background-color: aquamarine;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(117, 17, 17);
+}
+
+.txt-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.txt {
+    width: 500px;
+    text-align: justify;
+    margin: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
