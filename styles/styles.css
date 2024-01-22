@@ -1,32 +1,78 @@
-.hero-container {
-    background-color: grey;
+@font-face {
+    font-family: Mulish;
+    src: url(/assets/fonts/Mulish/Mulish-Regular.ttf);
 }
 
-.intro {
-    background-color: aquamarine;
-}
-
-.main-container {
+body {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-color: rgb(117, 17, 17);
+    justify-content: center;
+    align-items: center;
+    font-family: Mulish;
 }
 
-.txt-main-container {
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-container {
+    background-color: grey;
+    padding: 20px;
+}
+
+
+
+.intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px;
+    margin: 50px;
+    text-align: center;
+}
+
+.intro-txt{
+    width: 30%;
+}
+
+.line{
+    background-color: navajowhite;
+    border-radius: 50px;
+}
+
+.main-container {
+    text-align: center;
+    margin: 16px;
+}
+
+.txt-main-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin: 0 auto;
 }
 
 .txt {
-    width: 500px;
     text-align: justify;
-    margin: 20px;
+    background-color: aqua;
+}
+
+.txt-main-container{
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 img {
     width: 200px;
     height: 200px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: navajowhite;
+    width: 97vw;
+    padding: 20px;
+    border-radius: 10px;
 }
