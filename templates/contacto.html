@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/contacto.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+        <div class="hero-container">
+            <div class="hero-body">
+                <h1>Contacto</h1>
+                <h2>Manipulación de elementos y nodos con JavaScript</h2>
+            </div>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="hamburger">
+            <ul>
+                <li class="burger-li"><a href="/index.html">Home</a></li>
+                <li class="burger-li"><a href="">Ayuda</a></li>
+                <li class="burger-li"><a href="/templates/nosotros.html">Nosotros</a></li>
+                
+            </ul>
+        </div>
+    
+        <header class="nav-container">
+            <nav>
+                <a class="nav-element" href="/index.html">Home</a>
+                <a class="nav-element" href="">Ayuda</a>
+                <a class="nav-element" href="/templates/nosotros.html">Nosotros</a>
+            </nav>
+        </header>
+
+    <div class="form-container">
+        <form action="/templates/enviado.html" method="get" id="formulario">
+            <input  name="name" id="name" type="text" placeholder="Nombre">
+            <input  name="surname" id="surname" type="text" placeholder="Apellido">
+            <input  name="tlf" id="tlf" type="text" placeholder="Teléfono">
+            <input  name="mail" id="mail" type="text" placeholder="Correo Electrónico">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Déjanos un mensage"></textarea>
+            <input type="submit" name="send" id="send" value="Enviar">
+            
+            <div id="avisoFinal"><ul id="errores"></ul></div>
+        </form>
+    </div>
+    <script src="/scripts/contacto.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

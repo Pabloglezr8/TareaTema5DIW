@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: Mulish;
     src: url(/assets/fonts/Mulish/Mulish-Regular.ttf);
@@ -35,32 +37,43 @@ nav {
 }
 
 .menu-toggle {
+    width: 45px;
     display: none;
     cursor: pointer;
     margin: 20px;
     z-index: 1000;
+
 }
 
 .menu-toggle span {
+    text-align: center;
     display: block;
     width: 40px;
     height: 5px;
+    border-radius: 3px;
     background-color: #333;
     margin: 8px 0;
 
 }
 
 .menu-toggle.active span:nth-child(1) {
-    transition: 1s;
     transform: rotate(-45deg) translate(-12px, 6px);
+}
+.menu-toggle span:nth-child(1) {
+    background-color:#f9a948 ;
 }
 
 .menu-toggle.active span:nth-child(2) {
     opacity: 0;
 }
+.menu-toggle span:nth-child(2) {
+    background-color:  #2da4a9;
+}
 
+.menu-toggle span:nth-child(3) {
+    background-color:  rgb(176, 107, 241);
+}
 .menu-toggle.active span:nth-child(3) {
-    transition: 1s;
     transform: rotate(45deg) translate(-12px, -6px);
 }
 
@@ -70,10 +83,26 @@ nav {
     text-align: center;
     transform: translateY(-20px);
     transition: opacity 1s;
+    margin-top: 50px;
 }
 
-.hamburger li {
+.hamburger li{
     list-style: none;
+    margin: 10px;
+    background-color: #e54a3d;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.hamburger li:hover{
+    transform: scale(1.1);
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 .hamburger.show {
@@ -83,15 +112,39 @@ nav {
 }
 
 .hero-container {
-    background: url(/assets/images/heroimage.svg) bottom/cover;
-    padding: 20px;
-    border-radius: 50px;
-    text-align: center;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url(/assets/images/heroimage.svg);
+    background-size: cover;
+    background-position: bottom;
 }
 
+.hero-container::before {
+    content: "";
+    background: #000000;
+    position: absolute;
+    /* Posicionamiento con respecto al elemento padre */
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    /* 0 transparente, 1 opaco */
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    margin: 50px;
+    font-size: xx-large;
+}
+
+
+
 .hero-txt {
-    font-size: medium;
+    font-size: x-large;
+
 }
 
 .intro-container {
@@ -350,5 +403,4 @@ footer {
         opacity: 1;
         transition: opacity 1s;
     }
-
 }
