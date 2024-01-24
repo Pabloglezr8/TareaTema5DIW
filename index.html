@@ -10,37 +10,50 @@
 
 <body>
 
-    <header>
-        <img src="/assets/images/letra.png" alt="" id="letra">
+    <div class="hero-container">
+        <h1 class="hero-title">Mental Ress</h1>
+        <h2 class="hero-txt">Equilibrio mental, retiros espirituales. Encuentra paz, nutre tu ser.</h2>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="hamburger">
+        <ul>
+            <li><a href="">Ayuda</a></li>
+            <li><a href="">Acerca de</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </div>
+
+    <header class="nav-container">
         <nav>
-            <button>Inicio</button>
-            <button>Acerca de</button>
-            <button>Contacto</button>
+            <a class="nav-element" href="">Ayuda</a>
+            <a class="nav-element" href="">Acerca de </a>
+            <a class="nav-element" href="">Contacto</a>
         </nav>
     </header>
-    <div class="hero-container">
-        <h1>Aprendiendo a hacer diseños responsive</h1>
-        <h2>El diseño responsive, tambien conocido como diseño adaptable
-            o responsivo, es una técnica de diseño web que permite que un
-            sitio web ajuste automáticamente al tamaño y la resolución de
-            la pantalla del dispositivo desde el cual esta accediendo</h2>
-    </div>
+
     <div class="intro-container">
         <img class="salud-mental" src="/assets/images/saludMental.svg" alt="">
         <div class="intro-bg">
             <div class="intro">
                 <h2 class="intro-title">Mente Limpia, Corazón Limpio</h2>
-                La salud mental es esencial para el bienestar general,
-                y los retiros espirituales en entornos tranquilos con paisajes
-                hermosos desempeñan un papel crucial en su cuidado. Estos retiros
-                ofrecen un refugio del estrés diario, permitiendo a las personas
-                sumergirse en la serenidad de la naturaleza y promoviendo la relajación,
-                la reflexión y la conexión espiritual. Al proporcionar un espacio para
-                la meditación, la yoga y la interacción significativa con otros
-                participantes, los retiros espirituales fomentan no solo la salud mental
-                individual, sino también la construcción de comunidades de apoyo emocional.
-                Invertir tiempo en estas experiencias puede llevar a una vida más
-                equilibrada, consciente y plena.
+                <div>La salud mental es esencial para el bienestar general,
+                    y los retiros espirituales en entornos tranquilos con paisajes
+                    hermosos desempeñan un papel crucial en su cuidado. Estos retiros
+                    ofrecen un refugio del estrés diario, permitiendo a las personas
+                    sumergirse en la serenidad de la naturaleza y promoviendo la relajación,
+                    la reflexión y la conexión espiritual. Al proporcionar un espacio para
+                    la meditación, el yoga y la interacción significativa con otros
+                    participantes, los retiros espirituales fomentan no solo la salud mental
+                    individual, sino también la construcción de comunidades de apoyo emocional.
+                    Invertir tiempo en estas experiencias puede llevar a una vida más
+                    equilibrada, consciente y plena.
+                </div>
             </div>
         </div>
     </div>
@@ -93,6 +106,8 @@
             <div>Copy Name</div>
             <div></div>
         </footer>
+
+        <script src="scripts/index.js"></script>
 </body>
 
 </html>
