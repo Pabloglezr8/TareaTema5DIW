@@ -1,3 +1,8 @@
+/**
+ * @author Pablo Gonzalez Ruiz 
+ * @gitHub https://github.com/Pabloglezr8/TareaTema5DIW.git
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuButton = document.getElementById('mobile-menu');
     const hamburger = document.querySelector('.hamburger');

@@ -8,6 +8,9 @@
 </head>
 
 <style>
+
+    @import url(/styles/styles.css);
+
     @font-face {
         font-family: Mulish;
         src: url(/assets/fonts/Mulish/Mulish-Regular.ttf);
@@ -15,19 +18,25 @@
 
     body {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100vw;
-        height: 100vh;
+        background: url(/assets/images/heroimage.svg) center/cover;
+        width: 98vw;
+        height: 98vh;
     }
 
-    .container{
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 5px solid rgb(48, 147, 48);
+        border-top: #2da4a9 20px solid;
+        border-bottom: #30a35d 20px solid;
+        border-left: #f9a948 20px solid;
+        border-right: #e54a3d 20px solid;
         border-radius: 20px;
-        padding: 50px;
+        padding: 45px;
+        margin-top: 50px;
     }
 
     h1 {
@@ -37,6 +46,15 @@
 </style>
 
 <body>
+
+    <header class="nav-container">
+        <nav>
+            <a class="nav-element" href="/index.html">Home</a>
+            <a class="nav-element" href="">Ayuda</a>
+            <a class="nav-element" href="/templates/nosotros.html">Nosotros</a>
+        </nav>
+    </header>
+
     <div class="container">
         <h1>Enviado</h1>
     </div>
